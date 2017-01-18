@@ -153,14 +153,9 @@ cropper.js [点这里](https://github.com/fengyuanchen/cropperjs)
                 $.ajax(API_URL+'', {
                     method: "POST",
                     data: formData,
-                    headers: {
-                        'auth-token' : common.Cookie.get('token')
-                    },
                     processData: false,
                     contentType: false,
                     success: function (res) {
-                        common.Loading.hide();
-                        common.Toast.show('头像上传成功！');
                         try{
                             $scope.$apply(function(){
                                 $scope.isShowUnCompleteInfoBox = false;
@@ -172,7 +167,7 @@ cropper.js [点这里](https://github.com/fengyuanchen/cropperjs)
                         }
                     },
                     error: function () {
-                        common.Toast.show('头像上传失败！');
+                        
                     }
                 });
             });
@@ -201,7 +196,7 @@ cropper.js [点这里](https://github.com/fengyuanchen/cropperjs)
                         $image.cropper('destroy').attr('src', uploadedImageURL).cropper(options);
                         $inputImage.val('');
                     } else {
-                        common.Toast.show('请选择图片再上传！')
+
                     }
                 }
             });
