@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>avatar</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="Cropper/cropper.min.css">
+</head>
+<body>
+<div class="userInfo_box_uploadImg" >
+    <div class="userInfo_box_uploadImg_content">
+        <div class="userInfo_box_uploadImg_content_top">
+            <input id="inputImage" type="file" name="photoFile">
+            <label class="userInfo_box_uploadImg_content_top_input curp" for="inputImage">上传头像</label>
+            <label class="userInfo_box_uploadImg_content_top_message">仅支持JPG、GIF、PNG格式图片，且小于2M</label>
+        </div>
+        <div class="userInfo_box_uploadImg_content_mian">
+            <div class="userInfo_box_uploadImg_content_mian_left fl">
+                <div class="userInfo_box_uploadImg_content_mian_left_imgBox">
+                    <img src="img/user_unSet_image.png" id="image">
+                </div>
+
+                <div class="userInfo_box_uploadImg_content_mian_left_btns_zooms">
+                    <label id="userImg_zoomOut" class="fl curp">-</label>
+                    <label id="userImg_zoomIn" class="fr curp">+</label>
+                </div>
+                <div class="userInfo_box_uploadImg_content_mian_left_btns_others">
+                    <label id="userImg_rotate" class="fl curp">旋&nbsp;&nbsp;转</label>
+                    <label id="userImg_reUpload" class="fr curp">重新上传</label>
+                </div>
+
+            </div>
+            <div class="userInfo_box_uploadImg_content_mian_right fr tc">
+                <div class="userInfo_box_uploadImg_content_mian_right_preview100">
+                    <div class="userImg_preview"></div>
+                </div>
+                <label>100*100px</label>
+                <div class="userInfo_box_uploadImg_content_mian_right_preview50">
+                    <div class="userImg_preview"></div>
+                </div>
+                <label>50*50px</label>
+                <div class="userInfo_box_uploadImg_content_mian_right_preview30">
+                    <div class="userImg_preview"></div>
+                </div>
+                <label>30*30px</label>
+            </div>
+        </div>
+        <div class="userInfo_box_uploadImg_toolbar">
+            <label class="curp">取&nbsp;&nbsp;消</label>
+            <label id="userImg_save" class="curp">确&nbsp;&nbsp;定</label>
+        </div>
+    </div>
+</div>
+<script src="jquery-1.11.0.js"></script>
+<script src="Cropper/cropper.min.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
