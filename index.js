@@ -120,7 +120,6 @@ $(function () {
 
     // save and upload cropped Img
     $save.on('click',function(){
-        console.log($('#image').cropper('getCroppedCanvas'));
         $('#image').cropper('getCroppedCanvas').toBlob(function (blob) {
             var formData = new FormData();
 
