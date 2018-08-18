@@ -80,7 +80,7 @@ $(function () {
 
     // reUpload
     $reUpload.on('click',function(){
-        $image.cropper('destroy').attr('src', $scope.userInfo_imgUrl).cropper(options);
+        $image.cropper('destroy').attr('src', originalImageURL).cropper(options);
         if (uploadedImageURL) {
             URL.revokeObjectURL(uploadedImageURL);
             uploadedImageURL = '';
