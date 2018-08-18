@@ -121,12 +121,11 @@ $(function () {
     // save and upload cropped Img
     $save.on('click',function(){
         $('#image').cropper('getCroppedCanvas').toBlob(function (blob) {
-            var formData = new FormData();
-
-            formData.append('photoFile', blob);
-
-            // 在这里你就可以上传你的formData给后端了
-            console.log('点击确定，上传所截取的图片！')
+            // blob就是图片的二进制文件，至于怎么上传给你们的后端，需要和你们后端进行协商。在这里你就可以上传你的formData给后端了
+            console.log('点击确定，上传所截取的图片！', blob);
+            
+            // var formData = new FormData();
+            // formData.append('photoFile', blob);
             // $.ajax(API_URL+'', {
             //     method: "POST",
             //     data: formData,

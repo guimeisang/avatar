@@ -19,7 +19,7 @@
 > 打开localhost:3000 既可；（特别注意不要直接打开`index.html`，否则会报图片同源限制的错误！）
 
 > 请看demo：   
-https://guimeisang.github.io/react-mind/example/demo1.html
+https://guimeisang.github.io/avatar/index.html
 
 
 ### 实现大致思路如下：        
