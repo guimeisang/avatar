@@ -16,9 +16,6 @@
 > 直接打开`index.html`，也可以请看demo：   
 https://guimeisang.github.io/react-mind/example/demo1.html
 
-> 效果图   
-![image](https://user-images.githubusercontent.com/22538641/44296386-ab9f6180-a2f0-11e8-8d9e-a99b67f650fd.png)
-
 
 ### 实现大致思路如下：        
 1. 先有一个上传的（本地上传的功能），然后获取图片的地址。       

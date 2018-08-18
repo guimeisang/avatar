@@ -120,7 +120,7 @@ $(function () {
 
     // save and upload cropped Img
     $save.on('click',function(){
-        common.Loading.show();
+        console.log($('#image').cropper('getCroppedCanvas'));
         $('#image').cropper('getCroppedCanvas').toBlob(function (blob) {
             var formData = new FormData();
 
@@ -133,15 +133,6 @@ $(function () {
                 contentType: false,
                 success: function (res) {
                     alert('头像上传成功！');
-                    try{
-                        $scope.$apply(function(){
-                            $scope.isShowUnCompleteInfoBox = false;
-                            $scope.isShowCompleteInfoBox = false;
-                            $scope.userInfo_imgUrl = res.data;
-                        })
-                    }catch(err){
-                        console.log(err)
-                    }
                 },
                 error: function () {
                     alert('头像上传失败！');
