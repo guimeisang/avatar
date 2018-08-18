@@ -10,10 +10,15 @@
 > 现在b，g能搜到的头像上传插件并不太好用，所以想提供一个比较自由度的上传并且可以剪切的插件。   
 
 ### 例子  
-> 下载代码   
+- 下载代码   
 `git clone git@github.com:guimeisang/avatar.git`
 
-> 直接打开`index.html`，也可以请看demo：   
+- 将node服务起起来   
+> `npm install` 将express安装下；  
+> `node server.js`      
+> 打开localhost:3000 既可；（特别注意不要直接打开`index.html`，否则会报图片同源限制的错误！）
+
+> 请看demo：   
 https://guimeisang.github.io/react-mind/example/demo1.html
 
 

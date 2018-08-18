@@ -6,21 +6,23 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>avatar</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="Cropper/cropper.min.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+    <link rel="stylesheet" href="./plugins/Cropper/cropper.min.css">
 </head>
 <body>
 <div class="userInfo_box_uploadImg" >
     <div class="userInfo_box_uploadImg_content">
+        <!--顶部 -->
         <div class="userInfo_box_uploadImg_content_top">
             <input id="inputImage" type="file" name="photoFile">
             <label class="userInfo_box_uploadImg_content_top_input curp" for="inputImage">上传头像</label>
             <label class="userInfo_box_uploadImg_content_top_message">仅支持JPG、GIF、PNG格式图片，且小于2M</label>
         </div>
+        <!-- 主体 -->
         <div class="userInfo_box_uploadImg_content_mian">
             <div class="userInfo_box_uploadImg_content_mian_left fl">
                 <div class="userInfo_box_uploadImg_content_mian_left_imgBox">
-                    <img src="img/user_unSet_image.png" id="image">
+                    <img src="static/img/user_unSet_image.png" id="image">
                 </div>
 
                 <div class="userInfo_box_uploadImg_content_mian_left_btns_zooms">
@@ -48,14 +50,15 @@
                 <label>30*30px</label>
             </div>
         </div>
+        <!-- 根部工具栏 -->
         <div class="userInfo_box_uploadImg_toolbar">
             <label class="curp">取&nbsp;&nbsp;消</label>
             <label id="userImg_save" class="curp">确&nbsp;&nbsp;定</label>
         </div>
     </div>
 </div>
-<script src="jquery-1.11.0.js"></script>
-<script src="Cropper/cropper.min.js"></script>
-<script src="index.js"></script>
+<script src="./plugins/jquery/jquery-1.11.0.js"></script>
+<script src="./plugins/Cropper/cropper.min.js"></script>
+<script src="./src/index.js"></script>
 </body>
 </html>

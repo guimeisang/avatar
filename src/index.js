@@ -50,7 +50,7 @@ $(function () {
             });
         }
     };
-    var originalImageURL = 'img/user_unSet_image.png';
+    var originalImageURL = '../static/img/user_unSet_image.png';
     var uploadedImageURL;
 
 
@@ -125,18 +125,20 @@ $(function () {
 
             formData.append('photoFile', blob);
 
-            $.ajax(API_URL+'', {
-                method: "POST",
-                data: formData,
-                processData: false,
-                contentType: false,
-                success: function (res) {
-                    alert('头像上传成功！');
-                },
-                error: function () {
-                    alert('头像上传失败！');
-                }
-            });
+            // 在这里你就可以上传你的formData给后端了
+            console.log('点击确定，上传所截取的图片！')
+            // $.ajax(API_URL+'', {
+            //     method: "POST",
+            //     data: formData,
+            //     processData: false,
+            //     contentType: false,
+            //     success: function (res) {
+            //         alert('头像上传成功！');
+            //     },
+            //     error: function () {
+            //         alert('头像上传失败！');
+            //     }
+            // });
         });
     })
 
